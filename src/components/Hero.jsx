@@ -37,7 +37,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Content */}
-      <div className="relative max-w-6xl mx-auto h-full flex flex-col justify-center px-6 text-white">
+      <div className="relative max-w-7xl mx-auto h-full flex flex-col justify-center px-6 text-white">
         {/* Headline Animation */}
         <motion.h1
           initial={{ opacity: 0, y: 35 }}

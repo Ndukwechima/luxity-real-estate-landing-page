@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
+import luxityLOGO from '../assets/images/luxitylogo.png'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#102d52]/95 backdrop-blur border-b border-[#d4af37]/20">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <div className="text-[#d4af37] font-semibold text-2xl tracking-wider">
-          Luxity
+        <div>
+          <img src={luxityLOGO} alt="Luxity-logo" className="w-20 md:w-24" />
         </div>
 
         {/* Desktop Nav */}
@@ -62,7 +63,8 @@ export default function Header() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 80, damping: 15 }}
-            className="fixed top-0 right-0 h-full w-3/4 bg-[#102d52] border-l border-[#d4af37]/30 z-50 px-6 py-6 flex flex-col space-y-6"
+            className="fixed top-0 right-0 h-full w-3/4 bg-[#102d52]
+             border-l border-[#d4af37]/30 px-6 py-6 flex flex-col space-y-6"
           >
             {/* Close Button */}
             <button

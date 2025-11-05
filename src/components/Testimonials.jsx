@@ -83,7 +83,7 @@ export default function Testimonials() {
   const next = () => setIndex((i) => (i + 1) % testimonials.length);
 
   return (
-    <section className="py-20 bg-[#dadfe7]">
+    <section className="py-20 bg-[#e9edf1]">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -106,10 +106,7 @@ export default function Testimonials() {
           <button
             aria-label="Previous testimonial"
             onClick={prev}
-            className="hidden md:flex items-center justify-center 
-            absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 
-            rounded-full bg-white shadow-md text-[#102d52] 
-            hover:scale-105 transition z-20"
+            className="hidden md:flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-md text-[#102d52] hover:scale-105 transition z-20"
           >
             <FiChevronLeft size={20} />
           </button>
@@ -117,10 +114,7 @@ export default function Testimonials() {
           <button
             aria-label="Next testimonial"
             onClick={next}
-            className="hidden md:flex items-center justify-center
-             absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 
-             rounded-full bg-white shadow-md text-[#102d52] 
-             hover:scale-105 transition z-20"
+            className="hidden md:flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-md text-[#102d52] hover:scale-105 transition z-20"
           >
             <FiChevronRight size={20} />
           </button>
