@@ -3,6 +3,8 @@
 /* @import "tailwindcss"; */
 
 @theme {
+   --color-dark-blue: #102d52;
+  --color-golden-yellow: #d4af37
    /* --- Fonts --- */
     --font-heading: 'Cormorant Garamond', serif;
   --font-body: 'Lato', sans-serif;

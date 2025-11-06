@@ -63,7 +63,7 @@ export default function Header() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 80, damping: 15 }}
-            className="fixed top-0 right-0 h-full w-3/4 bg-[#102d52]
+            className="fixed top-0 right-0 h-full w-3/4 bg-dark-blue
              border-l border-[#d4af37]/30 px-6 py-6 flex flex-col space-y-6"
           >
             {/* Close Button */}
