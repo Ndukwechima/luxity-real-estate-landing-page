@@ -7,7 +7,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#102d52]/95 backdrop-blur border-b border-[#d4af37]/20">
+    <header className="fixed top-0 left-0 w-full z-50 bg-dark-blue/95 backdrop-blur border-b border-[#d4af37]/20">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <div>
