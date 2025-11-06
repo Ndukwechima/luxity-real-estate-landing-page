@@ -7,7 +7,10 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-dark-blue/95 backdrop-blur border-b border-[#d4af37]/20">
+    <header
+      className="fixed top-0 left-0 w-full z-50
+     bg-dark-blue backdrop-blur border-b border-[#d4af37]/20"
+    >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <div>
@@ -34,13 +37,15 @@ export default function Header() {
         <div className="hidden md:flex items-center space-x-3">
           <a
             href="tel:+2340000000000"
-            className="text-sm px-4 py-2 rounded border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-[#102d52] transition"
+            className="text-sm px-4 py-2 rounded border border-[#d4af37]
+             text-[#d4af37] hover:bg-[#d4af37] hover:text-dark-blue transition"
           >
             Call Agent
           </a>
           <a
             href="https://wa.me/2340000000000?text=Hello%2C%20I%27m%20interested%20in%20the%20property."
-            className="text-sm px-4 py-2 rounded bg-[#d4af37] text-[#102d52] hover:bg-[#c19e2f] transition"
+            className="text-sm px-4 py-2 rounded bg-[#d4af37]
+             text-dark-blue hover:bg-[#c19e2f] transition"
           >
             WhatsApp Now
           </a>
@@ -92,14 +97,16 @@ export default function Header() {
             <div className="pt-6 flex flex-col space-y-4">
               <a
                 href="tel:+2340000000000"
-                className="w-full text-center py-3 border border-[#d4af37] text-[#d4af37] rounded hover:bg-[#d4af37] hover:text-[#102d52]"
+                className="w-full text-center py-3 border border-[#d4af37]
+                 text-[#d4af37] rounded hover:bg-[#d4af37] hover:text-dark-blue"
               >
                 Call Agent
               </a>
 
               <a
                 href="https://wa.me/2340000000000?text=Hello%2C%20I%27m%20interested%20in%20the%20property."
-                className="w-full text-center py-3 bg-[#d4af37] text-[#102d52] rounded font-medium hover:bg-[#c19e2f]"
+                className="w-full text-center py-3 bg-[#d4af37] text-dark-blue
+                 rounded font-medium hover:bg-[#c19e2f]"
               >
                 WhatsApp Now
               </a>
